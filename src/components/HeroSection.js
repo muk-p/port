@@ -1,0 +1,76 @@
+import profilePlaceholder from '../assets/ChatGPT Image Jul 22, 2025, 10_30_11 PM.png'
+
+const HeroSection = () => {
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="animate-fade-in-up">
+          {/* Profile Image */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative">
+              <img
+                src={profilePlaceholder}
+                alt="Profile"
+                className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover shadow-large border-4 border-card animate-float"
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-hero opacity-20"></div>
+            </div>
+          </div>
+
+          {/* Name & Title */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
+            John Mukara
+          </h1>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-light text-primary-foreground/90 mb-6">
+            Fullstack Web Developer
+          </h2>
+
+          {/* Bio/Tagline */}
+          <p className="text-lg sm:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 leading-relaxed">
+            Passionate full-stack developer crafting elegant solutions with modern technologies. 
+            I transform ideas into intuitive digital experiences that make a difference.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <Button
+              size="lg"
+              variant="secondary"
+              onClick={() => scrollToSection('projects')}
+              className="bg-card text-card-foreground hover:bg-card/90 shadow-medium px-8 py-3"
+            >
+              View My Work
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => scrollToSection('contact')}
+              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3"
+            >
+              <Mail className="w-4 h-4 mr-2" />
+              Get In Touch
+            </Button>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <button
+            onClick={() => scrollToSection('about')}
+            className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+          >
+            <ChevronDown className="w-6 h-6" />
+          </button>
+        </div>
+      </div>
+
+      {/* Background decoration */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-accent-glow/20 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary-glow/20 rounded-full blur-3xl"></div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
