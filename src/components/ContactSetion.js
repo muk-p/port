@@ -12,9 +12,10 @@ const ContactSection = () => {
         I'm always open to discussing new projects or opportunities. Feel free to reach out!
       </p>
       <div
-        className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 rounded-xl transition shadow-md"
+        className="bg-blue-600 text-white hover:bg-blue-700 p-4 transition shadow-md"
       >
         Contact Me On
+      <div className="mt-4 text-gray-400">
         <a
           href="mailto:myjohnmukara@gmail.com"
           className="text-blue-200 hover:underline"
@@ -24,6 +25,7 @@ const ContactSection = () => {
         <a className="ml-4 text-blue-200 hover:underline" >
           Phone: +254 795 040 185
         </a>
+      </div>
       </div>
     </div>
   </section>
