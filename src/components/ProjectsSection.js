@@ -13,12 +13,12 @@ const ProjectsSection = () => {
           <ProjectCard
             title="Driving School Project"
             description="A driving school website that enables the applicants to apply for classes."
-            link="https://mi-tech-mt1qdmhcs-mukaras-projects.vercel.app/"
+            link="https://mi-tech-lime.vercel.app/"
           />
           <ProjectCard
             title="Gaming website"
             description="A gaming e-commerce website that allows selling of products."
-            link="https://gaming-f-git-feature-checkout-sales-updates-mukaras-projects.vercel.app/"
+            link="https://gaming-f.vercel.app/"
           />
           <p className = "text-grey-500">Admin:me3@gmail.com Pass:123456(deleted in 4 days)</p>
         </div>
