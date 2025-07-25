@@ -1,6 +1,10 @@
 import profilePlaceholder from '../assets/ChatGPT Image Jul 22, 2025, 10_30_11 PM.png'
 
 const HeroSection = () => {
+  const scrollToSection = (id) => {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -33,23 +37,22 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button
+            <button
               size="lg"
               variant="secondary"
               onClick={() => scrollToSection('projects')}
               className="bg-card text-card-foreground hover:bg-card/90 shadow-medium px-8 py-3"
             >
               View My Work
-            </Button>
-            <Button
+            </button>
+            <button
               size="lg"
               variant="outline"
               onClick={() => scrollToSection('contact')}
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3"
             >
-              <Mail className="w-4 h-4 mr-2" />
               Get In Touch
-            </Button>
+            </button>
           </div>
         </div>
 
@@ -59,7 +62,7 @@ const HeroSection = () => {
             onClick={() => scrollToSection('about')}
             className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
           >
-            <ChevronDown className="w-6 h-6" />
+              hey
           </button>
         </div>
       </div>
