@@ -20,6 +20,7 @@ const ProjectsSection = () => {
             description="A gaming e-commerce website that allows selling of products."
             link="https://gaming-f-git-feature-checkout-sales-updates-mukaras-projects.vercel.app/"
           />
+          <p className = "text-grey-500">Admin:me3@gmail.com Pass:123456(deleted in 4 days)</p>
         </div>
       </div>
     </section>
