@@ -1,4 +1,9 @@
 const ContactSection = () => {
+  const scrollToSection = (id) => {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="contact" className="py-16 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -6,14 +11,14 @@ const ContactSection = () => {
         <p className="text-lg text-primary-foreground/80 mb-8">
           I'm always open to discussing new projects or opportunities. Feel free to reach out!
         </p>
-        <Button
+        <button
           size="lg"
           variant="secondary"
           onClick={() => scrollToSection('contact')}
           className="bg-card text-card-foreground hover:bg-card/90 shadow-medium px-8 py-3"
         >
           Contact Me
-        </Button>
+        </button>
       </div>
     </section>
   );
