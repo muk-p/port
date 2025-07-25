@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard"
 
 const ProjectsSection = () => {
   return (
-   <section id="projects" className="py-28 bg-white">
+   <section id="projects" className="py-16 bg-gradient-to-br from-white via-blue-50 to-blue-100">
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 className="text-4xl font-bold text-gray-800 mb-6">My Projects</h2>
       <p className="text-lg sm:text-xl text-gray-600 mb-10">

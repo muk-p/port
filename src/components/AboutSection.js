@@ -5,7 +5,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="py-16 bg-gradient-to-br from-white via-blue-50 to-blue-100">
+    <section id="about" className="py-28 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
         <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-10">
