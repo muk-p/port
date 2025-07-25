@@ -1,4 +1,9 @@
 const AboutSection = () => {
+  const scrollToSection = (id) => {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="about" className="py-16 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -7,14 +12,14 @@ const AboutSection = () => {
           I am a passionate full-stack developer with experience in building modern web applications.
           My goal is to create seamless user experiences through clean and efficient code.
         </p>
-        <Button
+        <button
           size="lg"
           variant="secondary"
           onClick={() => scrollToSection('projects')}
           className="bg-card text-card-foreground hover:bg-card/90 shadow-medium px-8 py-3"
         >
           View My Work
-        </Button>
+        </button>
       </div>
     </section>
   );
