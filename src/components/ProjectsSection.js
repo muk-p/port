@@ -11,14 +11,14 @@ const ProjectsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {/* Project Cards */}
           <ProjectCard
-            title="Project One"
-            description="A brief description of Project One."
-            link="#"
+            title="Driving School Project"
+            description="A driving school website that enables the applicants to apply for classes."
+            link="https://mi-tech-mt1qdmhcs-mukaras-projects.vercel.app/"
           />
           <ProjectCard
-            title="Project Two"
-            description="A brief description of Project Two."
-            link="#"
+            title="Gaming website"
+            description="A gaming e-commerce website that allows selling of products."
+            link=""
           />
           <ProjectCard
             title="Project Three"
