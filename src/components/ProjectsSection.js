@@ -18,17 +18,7 @@ const ProjectsSection = () => {
           <ProjectCard
             title="Gaming website"
             description="A gaming e-commerce website that allows selling of products."
-            link=""
-          />
-          <ProjectCard
-            title="Project Three"
-            description="A brief description of Project Three."
-            link="#"
-          />
-          <ProjectCard
-            title="Project Four"
-            description="A brief description of Project Four."
-            link="#"
+            link="https://gaming-f-git-feature-checkout-sales-updates-mukaras-projects.vercel.app/"
           />
         </div>
       </div>
