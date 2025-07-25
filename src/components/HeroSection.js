@@ -41,7 +41,7 @@ const HeroSection = () => {
               size="lg"
               variant="secondary"
               onClick={() => scrollToSection('projects')}
-              className="bg-card text-card-foreground hover:bg-card/90 shadow-medium px-8 py-3"
+              className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition"
             >
               View My Work
             </button>
@@ -49,7 +49,7 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection('contact')}
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-3"
+              className="bg-blue-100 text-blue-700 px-4 py-2 rounded-xl hover:bg-blue-200 transition"
             >
               Get In Touch
             </button>
@@ -60,9 +60,9 @@ const HeroSection = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
             onClick={() => scrollToSection('about')}
-            className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+            className="border border-blue-600 text-blue-600 px-4 py-2 rounded-xl hover:bg-blue-50 transition"
           >
-              hey
+              ^
           </button>
         </div>
       </div>
