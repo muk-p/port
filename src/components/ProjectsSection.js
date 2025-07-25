@@ -1,3 +1,5 @@
+import ProjectCard from "./ProjectCard"
+
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-16 bg-background">
