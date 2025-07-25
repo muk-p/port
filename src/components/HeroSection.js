@@ -58,7 +58,7 @@ const HeroSection = () => {
         onClick={() => scrollToSection('about')}
         className="border border-blue-600 text-blue-600 px-4 py-2 rounded-xl hover:bg-blue-50 transition"
       >
-        ↑
+        ↓
       </button>
     </div>
   </div>
